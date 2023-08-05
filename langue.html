@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Langues</title>
+    <link rel="stylesheet" href="langue.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <li><a href="index.html" class="logo">Yala Maana</a></li>
+           <div class="nav-links">
+            <ul>
+              <li class="active"><a href="index.html">Accueil</a></li>
+              <li><a href="nosujets.html">Nos Sujets</a></li>
+              <li><a href="nosrecettes.html">Nos Recettes</a></li>
+              <li><a href="langue.html">Langues</a></li>
+             
+            </ul>
+           </div>
+           <img src="menubutton.jpg" alt="boutton menu" class="menu-button">
+       </nav>
+      </header>
+   <div class="langues">
+    <h2>Languages: <br><br></h2>
+    <li><a href="arabe.html">عربية</a></li>
+    
+    <li><a href="index.html">Français</a></li>
+
+   </div>
+</body>
+<script>
+  const menubutton = document.querySelector (".menu-button")
+  const navLinks = document.querySelector (".nav-links")
+
+  menubutton.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+  })
+  
+</script>
+</html>

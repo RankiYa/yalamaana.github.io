@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les IA</title>
+    <link rel="stylesheet" href="lesia.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <a href="#" class="logo">Yala Maana</a>
+           <div class="nav-links">
+            <ul>
+              <li class="active"><a href="index.html">Accueil</a></li>
+              <li><a href="nosujets.html">Nos Sujets</a></li>
+              <li><a href="#">Nos Recettes</a></li>
+              <li><a href="#">Commentaires</a></li>
+            </ul>
+           </div>
+           <img src="/YalaMaana/menu-button.png" alt="boutton menu" class="menu-button">
+       </nav>
+      </header>
+      <div class="text">
+    <h2>Les IA<br></h2>
+    <h6>Ecrit le 28/05/2023<br><br><br><br></h6>
+    <h5>Définition:<br><br></h5>
+       <p> L’IA ou intelligence artificielle consiste à mettre en œuvre un certains nombres de techniques visant à permettre aux machines d’imiter une forme intelligente réelle. C’est donc un réseaux de neurones artificiels constitués de serveurs qui permettent de résoudre plusieurs calculs dans une gigantesque base de données. <br><br> </p>
+      <h5>Par qui?<br><br></h5> 
+      <p> C’est grâce au mathématicien Alan Turing et son livre <i>Camputing Machinery and Intelligence</i> que cette notion voit le jour en 1950. La question : « les machines peuvent-elles penser ? » y est posée. Pour y répondre le père de l’informatique propose un test qui sera appelé plus tard: le « Test de Turing ». Dans ce test, une personne essaie de distinguer les réponses de l’ordinateur de celles de l’humain. Il permet de mesurer le degré d’intelligence d’une IA. <br><br></p>
+       <h5>Comment ça marche ? <br><br></h5> 
+       <p> C’est la machine learning (une technologie permettant de stocker une grande quantité de données dans un cerveau ou réseau neuronal virtuel) qui permet à l’IA de répondre à nos questions comme le fait Chat GPT par exemple. Les machines dotées d’IA mémorisent des comportements pour ensuite résoudre des problèmes et agir correctement face à une situation donnée.<br><br></p>
+        <h5>Les IA faibles et les IA fortes :<br><br> </h5>
+        <p>Les IA faibles sont des IA entraînées pour effectuer des tâches spécifiques, comme celles dont nous parlons constamment ces temps-ci (Alexa, Siri, les véhicules autonomes, et autres) <br>
+        L’IA forte quand à elle se compose de l’Intelligence artificielle générale (IAG) et de la super intelligence artificielle (SIA). L’IA générale est une forme plutôt théorique d’IA dans laquelle une machine aurait une conscience d’elle-même et serait capable d’apprendre et de planifier certains évènements (<i>TERMINATOR</i> par exemple).<br>
+        De l’autre côté, la SIA surpasserait l’intelligence des humains et les capacités de notre cerveau. Cette IA n’est encore que théorique et il n’existe aucun exemple concret à ce jour (sauf dans les sciences fictions comme <i>HAL</i> dans l’odyssée de l’espace). Attention, cela ne siginifie pas que les chercheurs ne sont pas en train d’en développer une actuellement!<br><br></p>
+        <h5>Conclusion:<br><br></h5> 
+        <p>Nous sommes passé ces dernières année à l’utilisation d’une AI du style chatbot comme un navigateur qui nous donne directement la réponse dont on a besoin sans faire de recherches à l’aide à la prise de décisions cruciales notamment dans le domaine médical ou encore militaire.
+            <br><br></p>
+        
+    </div>
+</body>
+<script>
+    const menubutton = document.querySelector (".menu-button")
+    const navLinks = document.querySelector (".nav-links")
+
+    menubutton.addEventListener('click',()=>{
+      navLinks.classList.toggle('mobile-menu')
+    })
+    
+  </script>
+</html>

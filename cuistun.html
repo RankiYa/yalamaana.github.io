@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuisine tunisienne</title>
+    <link rel="stylesheet" href="cuistun.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nerko+One&family=Six+Caps&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <a href="index.html" class="logo">Yala Maana</a>
+           <div class="nav-links">
+            <ul>
+              <li class="active"><a href="index.html">Accueil</a></li>
+              <li><a href="nosujets.html">Nos Sujets</a></li>
+              <li><a href="nosrecettes.html">Nos Recettes</a></li>
+              <li><a href="langue.html">Langues</a></li>
+            </ul>
+           </div>
+           <img src="menubutton.jpg" alt="boutton menu" class="menu-button">
+         
+       </nav>
+    </header>
+    <h2>La cuisine traditionnelle tunisienne</h2>
+    <div class="text">
+      <h4>Introduction : <br><br></h4>
+      <p>La cuisine tunisienne est une cuisine maghrébenne, caractérisée par ses goûts très divers dus aux nombreuses épices utilisées. <br>
+        La culture gastronomique de ce pays reflète les nombreuses civilisations qui y ont résidé tel que les berbères, puniques, arabes, juifs, turcs, grecs, romains,etc.  <br> <br></p>
+     <div class="aliments"><h4>Les aliments les plus utilisés : <br><br></h4>
+        <p>La Tunisie est un pays méditérranéen. On y trouve donc des oliviers, des produits marins (thon, poulpe, daurade, loup de mer, sardines,etc), blé (utilisé pour faire du pain, du couscous, de la semoule, des pâtes,etc), des arbres fruitiers (tel que les orangers, citronniers, amandiers, pruniers, pommiers,etc)
+          et bien d'autres.  
+        <br></p>
+     </div>
+     <div class="plats"><h4>Des plats emblématiques: <br><br> </h4>
+    <p>Parmi les plats les plus emblématiques de ce pays, nous pouvons compter: <br><br></p>
+  <li>Le <button class="button" onclick="openPopup()">couscous</button> sous ses différentes formes: au poisson, au mouton, aux légumes, au poulet,...</li>
+   <div class="popup" id="popup">
+    <button type="button" onclick="closePopup()">&times;</button>
+    <h3>A propos du couscous</h3>
+    <p>Le couscous est un plat traditionnel d'origine berbère très souvent présenté lorsque l'on reçoit plusieurs invités puisqu'il est facile à préparer en grandes quantités. <br> </p> 
+    <img src="attention.jpg" alt="attention">
+    <p>Les grains de couscous sont des grains de semoule travaillés puis tamisés très finement.</p>    
+   </div>
+
+  <li>La mloukhia (ملوخية en arabe)</li>
+  <li>La salade méchouia</li>
+  <li>La chakchouka</li>
+  <li>Le brik </li>
+  <li>Le tajine <br><br></li>
+  </div>  
+  </div>
+    <div class="Face"> 
+      <div id="deuxiemeTrait"></div>
+            <div id="copyrightEtIcon">
+             <div class="sign" id="copyright">
+               <span>© from Ranki; 2023</span>
+             </div>
+            </div>
+           
+             <div  id="Icon">
+               <a href="https://www.facebook.fr"><i class="fa fa-facebook"></i></a>
+               <a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
+               
+      </div>
+   </div>     
+<script>
+  let popup = document.getElementById("popup");
+
+  function openPopup(){
+    popup.classList.add("open-popup");
+  }
+  function closePopup(){
+    popup.classList.remove("open-popup");
+  }
+</script>
+</body>
+<script>
+    const menubutton = document.querySelector (".menu-button")
+    const navLinks = document.querySelector (".nav-links")
+
+    menubutton.addEventListener('click',()=>{
+      navLinks.classList.toggle('mobile-menu')
+    })
+    
+  </script>
+</html>

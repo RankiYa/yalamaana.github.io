@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اللغات</title>
+    <link rel="stylesheet" href="arlang.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+          <li><a href="arabe.html" class="logo">Yala Maana</a></li>
+           <div class="nav-links">
+            <ul>
+              <li class="active"><a href="arabe.html"> الصفحة الرئيسية</a></li>
+              <li><a href="arsujets.html">مواضيعنا</a></li>
+              <li><a href="arecette.html">وصفاتنا</a></li>
+              <li><a href="langue.html">اللغات</a></li>
+             
+            </ul>
+           </div>
+           <img src="menubutton.jpg" alt="boutton menu" class="menu-button">
+       </nav>
+      </header>
+
+      <div class="langues">
+        <h2>: اللغات<br><br></h2>
+        <li><a href="arabe.html">عربية</a></li>
+        
+        <li><a href="index.html">Français</a></li>
+    
+       </div>
+    
+<div class="Face"> 
+   <div id="deuxiemeTrait"></div>
+         <div id="copyrightEtIcon">
+          <div class="sign" id="copyright">
+            <span>© from Ranki; 2023</span>
+          </div>
+         </div>
+        
+          <div  id="Icon">
+            <a href="https://www.facebook.fr"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.youtube.com/@YalaMaana/featured"><i class="fa fa-youtube"></i></a>
+            
+   </div>
+</div>
+       
+         
+    </body> 
+    
+    <script>
+      const menubutton = document.querySelector (".menu-button")
+      const navLinks = document.querySelector (".nav-links")
+
+      menubutton.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+      })
+      
+    </script>
+
+</html>

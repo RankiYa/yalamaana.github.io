@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فندان</title>
+    <link rel="stylesheet" href="arfond.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <li><a href="arabe.html" class="logo">Yala Maana</a></li>
+       <div class="nav-links">
+        <ul>
+          <li class="active"><a href="arabe.html"> الصفحة الرئيسية</a></li>
+          <li><a href="arsujets.html">مواضيعنا</a></li>
+          <li><a href="arecette.html">وصفاتنا</a></li>
+          <li><a href="arlang.html">اللغات</a></li>
+         
+        </ul>
+       </div>
+       <img src="menubutton.jpg" alt="boutton menu" class="menu-button">
+   </nav>
+  </header>
+
+      <div class="titre">
+        <h2>وصفة فندان الشوكولاته</h2>
+      </div>
+      <div class="rect"><h4> : المكونات<br> <br>
+      </h4>
+      <p>  شوكولاتة سوداء 200غ<br>
+          زبدة 150غ <br>
+          فارينة 80غ<br>
+          4 بيض <br>
+          سكر 50غ<br> <br></p>
+      <h4> : الاعداد<br> <br></h4>
+      <p> يسخن الفرن على حرارة 150 درجة  <br>
+       يحضر القالب ويدهن بالسمن و الدقيق، حتى تتغطى الجوانب والقاع، ثم يترك القالب جانبا  <br>
+       يتم تذويب الزبدة والشوكولاتة <br>
+        يكسر البيض في وعاء و يضاف اليه السكر<br>
+      
+        نخفق على البيض و السكر حوالي 5 دقائق حتى نتحصل على خليط زاد حجمه ويكاد يبيض
+        <br>
+        يضاف الدقيق والزبدة والشوكولاتة إلى الخليط ويخفق حتى يتم الحصول على خليط متجانس <br>
+        يسكب الخليط في القالب المدهون بالزبدة والدقيق ويخبز لمدة 30 دقيقة 
+        <br>
+         نُخرج القالب من الفرن، ونتركه يبرد، ثمّ نقلبه في طبق
+ <br><br></p>
+      </div>
+  <div class="video">
+      <iframe width="400" height="225" src="https://www.youtube.com/embed/0ClP9WTn_fE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+  <div class="Face"> 
+    <div id="deuxiemeTrait"></div>
+          <div id="copyrightEtIcon">
+           <div class="sign" id="copyright">
+             <span>© from Ranki; 2023</span>
+           </div>
+          </div>
+         
+           <div  id="Icon">
+             <a href="https://www.facebook.fr"><i class="fa fa-facebook"></i></a>
+             <a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
+             
+    </div>
+ </div>
+        
+ 
+          
+        <script src="./assets/jquery.min.js" type="text/javascipt"></script> 
+       <script src="./assets/bootstrap.js" type="text/javascript"></script>
+       <script src="./script.js" type="text/javascript"></script>
+</body>
+<script>
+  const menubutton = document.querySelector (".menu-button")
+  const navLinks = document.querySelector (".nav-links")
+
+  menubutton.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+  })
+  
+</script>
+
+</html>
